@@ -15,6 +15,12 @@ public class addPlaceWithFilesRead {
 
 	@Test
 	public void addPlace() throws IOException {
+		
+		System.out.println("me doing in api resyassured change");
+		System.out.println("restassured ");
+		System.out.println("no");
+		
+		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		String response = given().queryParam("Key", "quick123").header("Content-Type","application/json")
 		.body(JsonRead.readJson())
@@ -47,6 +53,8 @@ public class addPlaceWithFilesRead {
 		
 		Assert.assertEquals(newAddress, actualAddress);*/
 
+	
 	}
+	
 	
 }
