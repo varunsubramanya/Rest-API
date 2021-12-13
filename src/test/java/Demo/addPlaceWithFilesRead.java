@@ -16,7 +16,7 @@ public class addPlaceWithFilesRead {
 	@Test
 	public void addPlace() throws IOException {
 		
-
+		System.out.println("merge");
 		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		String response = given().queryParam("Key", "quick123").header("Content-Type","application/json")
