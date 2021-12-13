@@ -17,16 +17,7 @@ public class addPlaceWithFilesRead {
 	public void addPlace() throws IOException {
 		
 
-		System.out.println("me doing in api resyassured change");
-		System.out.println("restassured ");
-		System.out.println("no");
-
-		System.out.println("to pull");
-		System.out.println("Develop branch");
 		
-		System.out.println("From rest to Develop branch");
-		System.out.println("I am fed up");
-
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		String response = given().queryParam("Key", "quick123").header("Content-Type","application/json")
 		.body(JsonRead.readJson())
