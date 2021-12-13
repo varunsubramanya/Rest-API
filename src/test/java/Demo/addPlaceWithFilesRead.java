@@ -25,7 +25,7 @@ public class addPlaceWithFilesRead {
 		System.out.println("Develop branch");
 
 		System.out.println("from APIREst to developBranch");
-		System.out.println("fed up");
+		
 
 
 		RestAssured.baseURI="https://rahulshettyacademy.com";
