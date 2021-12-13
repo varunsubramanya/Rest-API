@@ -23,6 +23,7 @@ public class addPlaceWithFilesRead {
 
 		System.out.println("to pull");
 		System.out.println("Develop branch");
+		System.out.println("from APIREst to developBranch");
 
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		String response = given().queryParam("Key", "quick123").header("Content-Type","application/json")
