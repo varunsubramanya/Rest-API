@@ -20,9 +20,10 @@ public class addPlaceWithFilesRead {
 		System.out.println("me doing in api resyassured change");
 		System.out.println("restassured ");
 		System.out.println("no");
+
+		System.out.println("to pull");
 		
-		
-		
+
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		String response = given().queryParam("Key", "quick123").header("Content-Type","application/json")
 		.body(JsonRead.readJson())
