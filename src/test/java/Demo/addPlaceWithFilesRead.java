@@ -21,7 +21,7 @@ public class addPlaceWithFilesRead {
 		System.out.println("restassured ");
 		System.out.println("no");
 		
-
+		
 		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		String response = given().queryParam("Key", "quick123").header("Content-Type","application/json")
