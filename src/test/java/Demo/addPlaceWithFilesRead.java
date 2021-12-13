@@ -21,6 +21,8 @@ public class addPlaceWithFilesRead {
 		System.out.println("restassured ");
 		System.out.println("no");
 		
+		System.out.println("to pull");
+		
 
 		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
