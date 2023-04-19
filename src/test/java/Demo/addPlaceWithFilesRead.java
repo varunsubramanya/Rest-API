@@ -5,6 +5,8 @@ import static org.hamcrest.Matchers.equalTo;
 
 import java.io.IOException;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
 import JavaUtility.JsonRead;
@@ -16,11 +18,14 @@ public class addPlaceWithFilesRead {
 	@Test
 	public void addPlace() throws IOException {
 		
+		
+		
 		System.out.println("merge");
 		System.out.println("final merging");
 		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
-		String response = given().queryParam("Key", "quick123").header("Content-Type","application/json")
+		String response = given().log().all().queryParam("Key", "quick123").header("Content-Type","application/json")
+		
 		.body(JsonRead.readJson())
 		.when().post("maps/api/place/add/json")
 		.then().assertThat().log().all().statusCode(200).body("scope",equalTo("APP")).header("Server","Apache/2.4.18 (Ubuntu)")
@@ -50,6 +55,15 @@ public class addPlaceWithFilesRead {
 		String actualAddress = Json.jsonPath(getplace, "address");
 		
 		Assert.assertEquals(newAddress, actualAddress);*/
+		
+		
+		
+
+	
+	
+	
+	
+	
 
 	
 	}
